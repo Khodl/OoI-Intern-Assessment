@@ -7,6 +7,7 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import { Link } from "react-router-dom";
+import LoginTable from "./LoginTable";
 
 const useStyles = makeStyles((theme) => ({
     paper: {
@@ -37,7 +38,6 @@ function logOut() {
 
 export default function LandingPage() {
     const classes = useStyles();
-
     return (
         <Container component="main" maxWidth="xs">
         <CssBaseline />
@@ -59,6 +59,8 @@ export default function LandingPage() {
             >
                 logout
                 </Button>
+
+            <LoginTable />
 
         </div>
     </Container>
